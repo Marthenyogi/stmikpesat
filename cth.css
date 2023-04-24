@@ -1,0 +1,30 @@
+#nav {background: #069bd6;margin-bottom: 20px;text-transform:uppercase;font-weight:bold}
+#nav ul {margin:0;padding:0;}
+#nav li {list-style:none;display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;margin:0;padding:0;}
+#nav li a {display:block;text-decoration:none;color:white;padding:1em;}
+#nav li a:hover {color:white;background:#191919;}
+.show-menu {background: #71a4fa;text-decoration: none;color: #fff;text-align: left;padding: 10px 5px;display: none;}
+.show-menu b{font-size:30px;}
+.show-menu span{margin-right: 1em;float:right;}
+#nav input[type=checkbox]{display: none;}
+#nav input[type=checkbox]:checked ~ #menus {display: block;}
+
+#nav ul.sub-menus{height:auto;overflow:hidden;width:180px;background:#eee;position:absolute;z-index:99;display:none;}
+#nav ul.sub-menus li{display:block;width:100%;text-transform:none;text-shadow:none}
+#nav ul.sub-menus a{color:#fff;background:#48d}
+#nav ul.sub-menus a:hover{background:#ddd;color:#333}
+#nav li:hover ul.sub-menus{display:block}
+#nav a.prett{padding:13px}
+#nav a.prett::after{content:&quot;&quot;;width:0;height:0;border-width:6px 5px;border-style:solid;border-color:#ccc transparent transparent transparent;position:absolute;top:18px;right:9px}
+
+@media screen and (max-width:768px){
+#nav ul {position: static;display: none;}
+#nav li {border-bottom: 1px solid #90b3ec;}
+#nav ul li, #nav li a {width: 100%;}
+#nav li a{display:block;height:auto;line-height:normal;}
+#nav li a {text-align:left;}
+#nav ul.sub-menus{width:100%;position:static;padding-left:20px}
+.show-menu {display:block!important;line-height:30px;}
+.show-menu:hover {cursor:pointer;}
+label {margin:0!important;}
+}
